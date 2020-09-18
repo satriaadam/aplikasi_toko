@@ -25,7 +25,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
               Container(
                 height: 50.0,
                 color: Colors.transparent,
-                padding: const EdgeInsets.only(left: 50.0, right: 10.0),
+                padding: const EdgeInsets.only(left: 20.0, right: 20.0),
                 child: TextField(
                   style: TextStyle(color: Colors.black),
                   decoration: InputDecoration(
@@ -33,7 +33,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     fillColor: Colors.grey.shade300.withOpacity(0.5),
                     filled: true,
                     labelText: "Nama",
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0)),
+                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(10.0)),
                   ),
                 ),
               ),

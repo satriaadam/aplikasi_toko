@@ -2,6 +2,7 @@ import 'package:aplikasi_toko/pages/registration_page.dart';
 import 'package:aplikasi_toko/utilities/styles.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -24,16 +25,19 @@ class _LoginPageState extends State<LoginPage> {
               Container(
                 height: 50.0,
                 color: Colors.transparent,
-                padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                padding: const EdgeInsets.only(left: 20.0, right: 20.0),
                   child: TextField(
                     style: TextStyle(color: Colors.black87),
                     decoration: InputDecoration(
+                      prefixIcon: Icon(MdiIcons.alienOutline),
                       fillColor: Colors.grey.shade300.withOpacity(0.5),
                       filled: true,
                       labelText: "Nama",
                       enabled: true,
+                      labelStyle: captionText,
                      // enabledBorder: ,
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0)),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(10.0)),
+                      focusColor: Colors.black
 
                     ),
                   ),

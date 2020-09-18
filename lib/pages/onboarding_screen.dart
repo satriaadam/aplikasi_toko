@@ -221,7 +221,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           onTap: () async {
             SharedPreferences prefs = await SharedPreferences.getInstance();
             prefs.setBool("skipStartup", true);
-            Navigator.pushReplacement(context, new MaterialPageRoute(
+            Navigator.push(context, new MaterialPageRoute(
                 builder: (context) => LoginPage())
             );
           },
