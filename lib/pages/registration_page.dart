@@ -1,6 +1,7 @@
 import 'package:aplikasi_toko/utilities/styles.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class RegistrationPage extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
       extendBody: true,
       body: Stack(
         children: <Widget>[
-          FlareActor('assets/animation/Background.flr',animation: 'Shrink'),
+          FlareActor('assets/animation/Background.flr',animation: 'Shrink', fit: BoxFit.cover,),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
@@ -24,18 +25,15 @@ class _RegistrationPageState extends State<RegistrationPage> {
               Container(
                 height: 50.0,
                 color: Colors.transparent,
-                padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                padding: const EdgeInsets.only(left: 50.0, right: 10.0),
                 child: TextField(
-                  autofocus: true,
-                  style: TextStyle(color: Colors.black87),
+                  style: TextStyle(color: Colors.black),
                   decoration: InputDecoration(
+                    prefixIcon: Icon(MdiIcons.alienOutline),
                     fillColor: Colors.grey.shade300.withOpacity(0.5),
                     filled: true,
                     labelText: "Nama",
-                    enabled: true,
-                    // enabledBorder: ,
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0)),
-
                   ),
                 ),
               ),

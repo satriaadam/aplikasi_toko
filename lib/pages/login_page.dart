@@ -12,10 +12,9 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBody: true,
       body: Stack(
         children: <Widget>[
-          FlareActor('assets/animation/Background.flr',animation: 'Flow'),
+          FlareActor('assets/animation/Background.flr',animation: 'Flow', fit: BoxFit.cover),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
@@ -27,7 +26,6 @@ class _LoginPageState extends State<LoginPage> {
                 color: Colors.transparent,
                 padding: const EdgeInsets.only(left: 10.0, right: 10.0),
                   child: TextField(
-                    autofocus: true,
                     style: TextStyle(color: Colors.black87),
                     decoration: InputDecoration(
                       fillColor: Colors.grey.shade300.withOpacity(0.5),

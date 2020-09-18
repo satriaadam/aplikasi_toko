@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
       home: AnimatedSplashScreen(
         splash: IntroPage(),
         centered: true,
+        curve: Curves.elasticInOut,
         splashIconSize: 250,
         splashTransition: SplashTransition.fadeTransition,
         duration: 10,
