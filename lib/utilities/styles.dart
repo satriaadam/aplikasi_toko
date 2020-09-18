@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 final heading1 = TextStyle(
   color: Colors.black54,
   fontFamily: 'Heebo',
-  fontWeight: FontWeight.w600,
+  fontWeight: FontWeight.bold,
   fontSize: 36.0,
   height: 1.2,
 );
@@ -11,7 +11,7 @@ final heading1 = TextStyle(
 final heading2 = TextStyle(
   color: Colors.black54,
   fontFamily: 'Heebo',
-  fontWeight: FontWeight.w400,
+  fontWeight: FontWeight.bold,
   fontSize: 28.0,
   height: 1.2,
 );
@@ -26,8 +26,9 @@ final largeText = TextStyle(
 final mediumText = TextStyle(
   color: Colors.black54,
   fontFamily: 'Raleway',
+  fontWeight: FontWeight.w600,
   fontSize: 20.0,
-  height: 1.5,
+  height: 1.2,
 );
 
 final captionText = TextStyle(
