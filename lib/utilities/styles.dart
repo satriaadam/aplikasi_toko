@@ -30,3 +30,23 @@ final mediumText = TextStyle(
   height: 1.5,
 );
 
+final captionText = TextStyle(
+  color: Colors.black54,
+  fontFamily: 'Maven Pro',
+  fontSize: 18.0,
+  height: 1.2,
+);
+
+final normalText = TextStyle(
+  color: Colors.black54,
+  fontFamily: 'Raleway',
+  fontSize: 16.0,
+  height: 1.2,
+);
+
+final smallText = TextStyle(
+  color: Colors.black54,
+  fontFamily: 'Maven Pro',
+  fontSize: 12.0,
+  height: 1.2,
+);
